@@ -1,0 +1,49 @@
+/* ...existing code... */
+
+header {
+    width: 100%;
+    background: #eaeaea;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+.sidebar {
+    width: 220px;
+    background: #eaeaea;
+    padding: 30px 15px;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height já está definido em .container */
+}
+
+/* ...existing code... */

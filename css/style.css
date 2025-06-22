@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,23 +5,28 @@
 }
 
 body {
-  background-color: #1e1e1e; /* cor 1: cinza escuro */
-  font-family: Verdana, sans-serif; /* fonte 1 */
+  background-color: #1e1e1e;
+  font-family: Verdana, sans-serif;
   color: #eee;
   display: flex;
-  justify-content: center; /* centraliza o conteúdo */
+  justify-content: center;
 }
 
 main {
-  background-color: #2e2e2e; /* cor 2: cinza mais claro */
+  background-color: #2e2e2e;
   max-width: 1000px;
   width: 90%;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
 }
 
-/* Cabeçalho e nav */
 header {
   background-color: #333;
   padding: 10px;
@@ -40,33 +44,41 @@ header {
 
 nav ul {
   list-style: none;
-  display: flex; /* flexbox no menu */
+  display: flex;
   gap: 10px;
   margin-top: 10px;
 }
 
 nav ul li a {
-  color: #00ccff; /* cor 3: azul neon */
+  color: #00ccff;
   text-decoration: none;
-  font-family: Georgia, serif; /* fonte 2 */
+  font-family: Georgia, serif;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-/* Pseudo-classe */
 nav ul li a:hover {
-  background-color: #ff3366; /* muda cor ao passar o mouse */
+  background-color: #ff3366;
   color: white;
 }
 
 footer {
-  background-color: #333;
-  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
   border-radius: 0 0 10px 10px;
   text-align: center;
 }
 
-/* Exemplo de conteúdo lado-a-lado */
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 section.lado-a-lado {
   display: flex;
   gap: 20px;
@@ -81,14 +93,15 @@ section.lado-a-lado div {
   text-align: center;
 }
 
-/* Formulário */
 form label {
   display: block;
   margin: 10px 0 5px;
-  font-family: 'Courier New', monospace; /* fonte 3 */
+  font-family: 'Courier New', monospace;
 }
 
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
   width: 100%;
   padding: 5px;
   border-radius: 5px;
@@ -108,6 +121,6 @@ button {
 }
 
 button:hover {
-  background: #ff3366; /* pseudo-classe no botão */
+  background: #ff3366;
   color: white;
 }
